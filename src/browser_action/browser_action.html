@@ -1,0 +1,57 @@
+<!doctype html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+	* {
+		font-family: 'Chakra Petch', sans-serif;
+		font-size: 15px;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	button {
+		background-color: #00FFB4;
+		border: none;
+		box-shadow: none;
+		border-radius: 5px;
+		margin: 2px;
+		cursor: pointer;
+		padding: 8px;
+		font-weight: 700;
+	}
+	button:hover {
+		box-shadow:0px 0px 16px 0px #00FFB4;
+	}
+	input {
+		cursor: pointer;
+	}
+	label {
+		text-align: left;
+	}
+	#mainPopup {
+		width: 200px;
+		padding: 16px;
+		background: radial-gradient(ellipse at center, black 0%, #0E2D3F 100%);
+		color: #FFF;
+		height: auto;
+		text-align: center;
+	}
+	#imContainer {
+		text-align: center;
+	}
+</style>
+
+<div id="mainPopup">
+	<div id="imContainer">
+		<img id="sheep" src="../../icons/icon48.png">
+	</div>	
+	<div id="butContainer">
+		<button id="farmBtn">FARM</button>
+		<button id="addSiteBtn">ADD THIS SITE</button>
+	</div>
+	<input type="checkbox" id="remainder" checked>
+	<label id="remainderIpt" for="remainder">Remind me to farm</label>
+</div>
+
+<script type="text/javascript" src="popup.js"></script>
